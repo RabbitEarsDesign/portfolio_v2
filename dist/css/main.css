@@ -268,7 +268,9 @@ img {
 #main-header .main-tagline h2 {
   font-style: italic;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "Pricedown";
+  line-height: 0.95;
 }
 
 .banner {
