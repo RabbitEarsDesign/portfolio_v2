@@ -1,0 +1,63 @@
+#aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+
+  z-index: 100;
+
+  .aside-container {
+    .aside-logo {
+      width: 75px;
+      height: 75px;
+    }
+
+    .aside-nav {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60vh;
+
+      margin-top: 60px;
+
+      .aside-links {
+        li {
+          margin: 10px 5px;
+
+          a {
+            color: #ccc;
+            &:hover {
+              color: #fff;
+            }
+
+            p {
+              font-size: 0.5rem;
+              display: none;
+              text-transform: uppercase;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // This section applies when the JS runs
+  &.active {
+    background: rgba(0, 0, 0, 0.8);
+    .aside-container {
+      .aside-nav {
+        .aside-links {
+          li {
+            a {
+              p {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

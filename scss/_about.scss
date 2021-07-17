@@ -1,0 +1,45 @@
+.about-content {
+  color: #ccc;
+  // margin-right: 2rem;
+  // margin-bottom: 3rem;
+
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0rem;
+  }
+
+  h3 {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 3rem 0rem 0.75rem 0rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+
+    &:nth-child(odd) {
+      background: linear-gradient(
+        180deg,
+        rgb(129, 45, 76) 0%,
+        rgba(247, 52, 122, 1) 100%
+      );
+    }
+  }
+
+  .bottom-line {
+    margin: 0 auto;
+  }
+}
+
+.center.about .main__logo {
+  transform: rotateX(0deg);
+}

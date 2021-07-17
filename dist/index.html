@@ -1,56 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Favicon -->
- <!-- Fonts -->
- <link
- rel="preload"
- as="font"
- href="fonts/pricedown_bl-webfont.woff2"
- type="font/woff2"
- crossorigin="anonymous"
-/>
-<link
- rel="preload"
- as="font"
- href="fonts/LasEnter.woff2"
- type="font/woff2"
- crossorigin="anonymous"
-/>
-<link
- rel="preload"
- as="font"
- href="fonts/pricedown_bl-webfont.woff"
- type="font/woff2"
- crossorigin="anonymous"
-/>
-<link
- rel="preload"
- as="font"
- href="fonts/LasEnter.woff"
- type="font/woff2"
- crossorigin="anonymous"
-/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
- <link
- rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
- integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
- crossorigin="anonymous"
- referrerpolicy="no-referrer"
-/>
- 
- <!-- CSS -->
- <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/LasEnter.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
- <!-- JS -->
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/LasEnter.woff"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-  <title>Rabbit Ears Design</title>
-</head>
-<body>
-  
-</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <title>Rabbit Ears Design</title>
+  </head>
+  <body>
+    <!-- Space background used for entire site -->
+    <!-- Courtesy of Anastacia Goodwin -->
+    <!-- https://codepen.io/agoodwin/pen/NMJoER -->
+    <div class="space-background-container">
+      <!-- <img
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png"
+        alt=""
+      /> -->
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+    </div>
+
+    <!-- Aside -->
+    <aside id="aside">
+      <div class="aside-container">
+        <figure class="aside-logo">
+          <a href="index.html">
+            <img src="./img/logo_stacked_small.png" alt="logo" />
+          </a>
+        </figure>
+
+        <nav class="aside-nav">
+          <ul class="aside-links aside-links-nav">
+            <li>
+              <a href="about.html"
+                ><i class="fas fa-info"></i>
+                <p>About</p></a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-phone"></i>
+                <p>Contact</p></a
+              >
+            </li>
+          </ul>
+          <ul class="aside-links aside-links-social">
+            <li>
+              <a href="https://github.com/RabbitEarsDesign" target="blank"
+                ><i class="fab fa-github"></i>
+                <p>GitHub</p></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/james-mcconnell-a69b3b135"
+                target="blank"
+                ><i class="fab fa-linkedin"></i>
+                <p>LinkedIn</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main id="main" class="main-content-container mg-left-1 mg-right-1">
+      <header class="banner">
+        <h4>
+          <a href="mailto:james@rabbitearsdesign.com"
+            >james@rabbitearsdesign.com</a
+          >
+        </h4>
+        <h4>(303) 876-7663</h4>
+      </header>
+
+      <header id="main-header">
+        <div class="main-tagline">
+          <h2>Design Driven</h2>
+          <h2>Web Developement</h2>
+        </div>
+        <div class="main-cta">
+          <a href="contact.html" class="btn btn-fill">Request Quote</a>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+      </header>
+
+      <section class="projects">
+        <h2>Client Work</h2>
+        <!-- Swiper JS carousel inspired by Raddy -->
+        <!-- https://raddy.co.uk/blog/better-netflix-carousel-using-swiperjs/?_ga=2.56943978.1988732976.1624966004-1890260418.1624966004 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/bobs_bowling_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/moment_gallery_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/something_sweet_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>Personal Projects</h2>
+        <!-- Swiper JS carousel inspired by Raddy -->
+        <!-- https://raddy.co.uk/blog/better-netflix-carousel-using-swiperjs/?_ga=2.56943978.1988732976.1624966004-1890260418.1624966004 -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/bobs_bowling_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/moment_gallery_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/cover/something_sweet_cover.png"
+                alt="Project"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/projects/cover/coming_soon.jpg" alt="Project" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
 </html>

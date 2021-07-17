@@ -1,0 +1,49 @@
+.btn {
+  color: #fff;
+
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 0.75rem;
+  font-size: 0.6rem;
+  display: block;
+  text-transform: uppercase;
+
+  border-radius: 50px;
+  border: rgba(247, 52, 122, 1) 2px solid;
+
+  transition: background 500ms ease;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(129, 45, 76) 0%,
+      rgba(247, 52, 122, 1) 100%
+    );
+  }
+}
+
+.btn-fill {
+  background: linear-gradient(
+    90deg,
+    rgb(129, 45, 76) 0%,
+    rgba(247, 52, 122, 1) 100%
+  );
+
+  &:hover {
+    background: none;
+  }
+}
+
+// Margins
+.mg-right-1 {
+  margin-right: 1rem;
+}
+.mg-left-1 {
+  margin-left: 1rem;
+}
+
+.bottom-line {
+  width: 100px;
+  height: 2px;
+  background: rgb(247, 52, 122);
+}

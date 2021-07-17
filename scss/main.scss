@@ -1,3 +1,27 @@
-body {
-  background: blue;
+@font-face {
+  font-family: "Las Enter";
+  src: url("fonts/LasEnter.woff2") format("woff2"),
+    url("fonts/LasEnter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("fonts/pricedown_bl-webfont.woff2") format("woff2"),
+    url("fonts/pricedown_bl-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "reset";
+@import "variables";
+@import "utilities";
+@import "space_background";
+@import "aside";
+@import "main_content_container";
+@import "main_header";
+@import "banner";
+@import "projects";
+@import "contact";
+@import "about";
