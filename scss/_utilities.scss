@@ -14,10 +14,12 @@
   transition: background 500ms ease;
 
   &:hover {
+    background: rgb(98, 93, 184);
     background: linear-gradient(
       90deg,
-      rgb(129, 45, 76) 0%,
-      rgba(247, 52, 122, 1) 100%
+      rgba(98, 93, 184, 1) 0%,
+      rgba(110, 110, 221, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
     );
   }
 }
