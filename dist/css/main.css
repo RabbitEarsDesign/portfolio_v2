@@ -97,6 +97,10 @@ img {
   background: #f7347a;
 }
 
+.text-align {
+  text-align: center;
+}
+
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -324,7 +328,31 @@ img {
 
 .projects h2 {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 600;
+}
+
+.projects .project-details {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0.5rem;
+}
+
+.projects .project-details #project-title {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.projects .project-details .project-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.projects .project-details .project-container .project-logo-container {
+  border-radius: 50%;
+}
+
+.projects .project-details .project-container p {
+  line-height: 1.6;
 }
 
 .contact {
