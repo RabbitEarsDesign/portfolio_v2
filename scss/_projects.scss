@@ -83,11 +83,19 @@
       }
 
       .project-subheader {
+        font-size: 1rem;
       }
 
       p {
         line-height: 1.6;
       }
+    }
+
+    .project-links {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

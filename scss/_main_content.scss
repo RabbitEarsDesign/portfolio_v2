@@ -4,6 +4,8 @@
   right: 0;
   z-index: 1;
 
+  padding-left: 1rem;
+
   width: calc(100vw - 80px);
 
   color: #ccc;
@@ -13,12 +15,28 @@
   padding: 3rem 1rem;
 
   .main-tagline {
+    text-align: center;
     h2 {
       font-style: italic;
       font-weight: 900;
       font-size: 2rem;
       font-family: "Pricedown";
       line-height: 0.95;
+    }
+  }
+}
+
+@media (min-width: 499px) {
+  #main-header {
+    .main-tagline {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    .main-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
