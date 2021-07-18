@@ -1,3 +1,14 @@
+.main-content-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  width: calc(100vw - 80px);
+
+  color: #ccc;
+}
+
 #main-header {
   padding: 3rem 1rem;
 
