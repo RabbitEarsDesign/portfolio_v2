@@ -74,9 +74,14 @@
       }
 
       .btn {
-        color: #fff;
+        // color: #fff;
+        background: none;
         cursor: pointer;
         width: 100%;
+
+        &:hover {
+          color: var(--color-primary);
+        }
       }
     }
   }

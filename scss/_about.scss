@@ -25,14 +25,6 @@
 
   .btn {
     margin-bottom: 1rem;
-
-    &:nth-child(odd) {
-      background: linear-gradient(
-        180deg,
-        rgb(129, 45, 76) 0%,
-        rgba(247, 52, 122, 1) 100%
-      );
-    }
   }
 
   .bottom-line {

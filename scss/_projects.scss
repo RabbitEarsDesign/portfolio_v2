@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($color: #000000, $alpha: 0.3);
+    background: rgba($color: #000000, $alpha: 0.5);
   }
 
   &:hover {
@@ -58,9 +58,10 @@
 .projects {
   margin-bottom: 2rem;
 
-  .projects-header {
+  .section-header {
     font-size: 2rem;
     font-weight: 200;
+    margin-bottom: 1rem;
   }
 
   .project-details {
@@ -96,6 +97,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+@media (min-width: 499px) {
+  // Projects
+  .projects {
+    .section-header {
+    }
+
+    .project-details {
+      #project-title {
+      }
+
+      .project-container {
+        .project-logo-container {
+        }
+
+        .project-subheader {
+        }
+
+        p {
+        }
+      }
+
+      .project-links {
+        flex-direction: column;
+      }
     }
   }
 }

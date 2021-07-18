@@ -1,6 +1,6 @@
 .btn {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 0.75rem;
   font-size: 0.6rem;
 
@@ -8,6 +8,7 @@
   display: block;
 
   color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -73,41 +74,41 @@
 
 @keyframes animate1 {
   0% {
-    left: -100%;
+    transform: translateX(-100%);
   }
   50%,
   100% {
-    left: 100%;
+    transform: translateX(100%);
   }
 }
 
 @keyframes animate2 {
   0% {
-    top: -100%;
+    transform: translateY(-100%);
   }
   50%,
   100% {
-    top: 100%;
+    transform: translateY(100%);
   }
 }
 
 @keyframes animate3 {
   0% {
-    right: -100%;
+    transform: translateX(100%);
   }
   50%,
   100% {
-    right: 100%;
+    transform: translateX(-100%);
   }
 }
 
 @keyframes animate4 {
   0% {
-    bottom: -100%;
+    transform: translateY(100%);
   }
   50%,
   100% {
-    bottom: 100%;
+    transform: translateY(-100%);
   }
 }
 
