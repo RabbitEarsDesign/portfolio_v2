@@ -619,6 +619,10 @@ img {
   font-size: 0.75rem;
 }
 
+.projects #card .card-details .card-links .btn {
+  margin-left: 0;
+}
+
 .projects #card .card-details .card-links .btn:first-child {
   margin-right: 1rem;
 }
