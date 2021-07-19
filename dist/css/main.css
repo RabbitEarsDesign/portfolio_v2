@@ -138,8 +138,8 @@ img {
   background: linear-gradient(180deg, transparent, var(--color-primary));
   -webkit-animation: animate2 1s linear infinite;
           animation: animate2 1s linear infinite;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .btn span:nth-child(3) {
@@ -164,8 +164,8 @@ img {
   background: linear-gradient(360deg, transparent, var(--color-primary));
   -webkit-animation: animate4 1s linear infinite;
           animation: animate4 1s linear infinite;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 @-webkit-keyframes animate1 {
