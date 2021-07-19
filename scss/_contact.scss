@@ -6,6 +6,7 @@
     h4 {
       font-size: 2rem;
       font-weight: 100;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -29,6 +30,7 @@
     text-align: center;
     h3 {
       font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
     .bottom-line {
@@ -37,7 +39,7 @@
     }
 
     .inputs {
-      margin: 0 auto;
+      margin: 1rem auto;
 
       text-align: center;
       display: flex;
@@ -48,9 +50,11 @@
         display: block;
         width: 100%;
         padding: 1rem 2rem;
+        margin: 0.5rem 0;
         border: 1px solid #f7347a;
         background: none;
         color: #ccc;
+
         &::placeholder {
           color: #ccc;
           font-size: 0.75rem;

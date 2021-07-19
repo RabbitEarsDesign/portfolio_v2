@@ -97,7 +97,7 @@
       .card-labels {
         display: flex;
         justify-content: space-between;
-        width: 55%;
+        width: 70%;
 
         margin: 0;
         padding: 0;
@@ -150,6 +150,12 @@
     #card {
       flex-direction: row;
       flex: 2 1;
+
+      .card-details {
+        .card-labels {
+          width: 50%;
+        }
+      }
     }
   }
 
