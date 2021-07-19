@@ -54,77 +54,106 @@
   }
 }
 
-// Projects
 .projects {
-  margin-bottom: 2rem;
-
   .section-header {
     font-size: 2rem;
-    font-weight: 200;
-    margin-bottom: 1rem;
+    font-weight: 400;
   }
 
-  .project-details {
+  #card {
     display: none;
 
-    background: rgba($color: #000000, $alpha: 0.7);
-    padding: 1rem 0.5rem;
+    background: #121212;
 
-    #project-title {
-      font-size: 1.5rem;
-      font-weight: 200;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+    flex-direction: column;
+
+    margin: 2rem 0;
+
+    .btn:nth-child(odd) {
+      filter: hue-rotate(200deg);
     }
-
-    .project-container {
-      text-align: center;
-      margin: 2rem 0;
-
-      .project-logo-container {
-        border-radius: 50%;
-      }
-
-      .project-subheader {
-        font-size: 1rem;
-      }
-
-      p {
-        line-height: 1.6;
+    .card-image {
+      img {
+        width: 100%;
+        object-fit: cover;
       }
     }
 
-    .project-links {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .card-details {
+      padding: 1rem;
+      text-align: left;
+
+      .card-header {
+        font-weight: 100;
+        text-transform: uppercase;
+        margin: 10px 0;
+
+        font-size: 1.25rem;
+      }
+
+      .card-labels {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+
+        margin: 0;
+        padding: 0;
+
+        p {
+          margin: 0;
+          padding: 0;
+
+          font-size: 0.75rem;
+          color: #ccc;
+          font-weight: 100;
+        }
+      }
+
+      .card-description {
+        margin: 0;
+        padding: 0;
+
+        font-size: 0.75rem;
+        color: #ccc;
+        font-weight: 100;
+      }
+
+      .card-rating {
+        margin: 10px 0;
+        color: var(--color-primary);
+
+        i {
+          font-size: 0.75rem;
+        }
+      }
+
+      .card-links {
+        .btn {
+          &:first-child {
+            margin-right: 1rem;
+          }
+
+          &:nth-child(odd) {
+            filter: hue-rotate(200deg);
+          }
+        }
+      }
     }
   }
 }
 
-@media (min-width: 499px) {
-  // Projects
+@media (min-width: 1023px) {
   .projects {
-    .section-header {
+    #card {
+      flex-direction: row;
+      flex: 2 1;
     }
+  }
 
-    .project-details {
-      #project-title {
-      }
-
-      .project-container {
-        .project-logo-container {
-        }
-
-        .project-subheader {
-        }
-
-        p {
-        }
-      }
-
-      .project-links {
-        flex-direction: column;
-      }
-    }
+  .card .card-image {
+    flex-basis: 3;
   }
 }

@@ -53,15 +53,14 @@ const showProjectDetails = () => {
   const projectData = [
     // Bobs Bowling
     {
-      title: "Bob's Bowling",
-      projectSummary: `Bobs Bowling is a fictional website created by Rabbit Ears Design. It is intended to showcasethe quality of work that clients can expect to recieve.`,
-      projectDesignProcess: `The Design goal for "Bob's Bowling was to build a clean website to drive more traffic to the business. I wanted to pick a simple color scheme that was visually appealing and built more brand recognition.`,
-      projectMoreInfo: `This project required deep knowledge of scss features along with the use of JavaScript and JS frameworks`,
-      projectImg1: "./img/projects/bobs_bowling1.png",
-      projectImg2: "./img/projects/bobs_bowling2.png",
-      projectImg3: "./img/projects/bobs_bowling3.png",
+      cardHeader: "Bob's Bowling",
+      cardImage: "./img/projects/bobs_bowling1.png",
+      cardLabelYear: "2021",
+      cardLabelBizType: "Ski Company",
+      cardLabelCategory: "Action",
+      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
       github: "https://github.com",
-      website: "https://www.bobsbowling.com/",
+      website: "https://google.com",
     },
 
     // Moment Gallery
@@ -103,19 +102,18 @@ const showProjectDetails = () => {
   projectsArr.forEach((item) => {
     item.addEventListener("click", () => {
       if (projectsArr.indexOf(item) + 1 <= projectData.length) {
-        project.style.display = "block";
-        project.scrollIntoView();
+        card.style.display = "flex";
+        card.scrollIntoView();
 
         let indexOfSwiper = projectsArr.indexOf(item);
 
-        projectTitle.innerHTML = projectData[indexOfSwiper].title;
-        projectSummary.innerHTML = projectData[indexOfSwiper].projectSummary;
-        projectImg1.src = projectData[indexOfSwiper].projectImg1;
-        projectImg2.src = projectData[indexOfSwiper].projectImg2;
-        projectImg3.src = projectData[indexOfSwiper].projectImg3;
-        projectDesignProcess.innerHTML =
-          projectData[indexOfSwiper].projectDesignProcess;
-        projectMoreInfo.innerHTML = projectData[indexOfSwiper].projectMoreInfo;
+        cardHeader.innerHTML = projectData[indexOfSwiper].cardHeader;
+        cardLabelYear.innerHTML = projectData[indexOfSwiper].cardLabelYear;
+        cardImage.src = projectData[indexOfSwiper].cardImage;
+        cardLabelBizType.innerHTML =
+          projectData[indexOfSwiper].cardLabelBizType;
+        cardLabelCategory.innerHTML =
+          projectData[indexOfSwiper].cardLabelCategory;
         github.href = projectData[indexOfSwiper].github;
         website.href = projectData[indexOfSwiper].website;
       } else {
@@ -126,16 +124,15 @@ const showProjectDetails = () => {
 
   // Get various project content inputs via id
 
-  const project = document.getElementById("project-details");
-  const projectTitle = document.getElementById("project-title");
-  const projectSummary = document.getElementById("project-summary");
-  const projectDesignProcess = document.getElementById(
-    "project-design-process"
+  const card = document.getElementById("card");
+  const cardImage = document.getElementById("card-image");
+  const cardHeader = document.getElementById("card-header");
+  const cardLabelYear = document.getElementById("card-label-year");
+  const cardLabelType = document.getElementById("card-label-type");
+  const cardLabelBizCategory = document.getElementById(
+    "card-label-biz-category"
   );
-  const projectMoreInfo = document.getElementById("project-more-info");
-  const projectImg1 = document.getElementById("project-img-1");
-  const projectImg2 = document.getElementById("project-img-2");
-  const projectImg3 = document.getElementById("project-img-3");
+  const cardDescription = document.getElementById("card-description");
   const github = document.getElementById("github");
   const website = document.getElementById("website");
 };
