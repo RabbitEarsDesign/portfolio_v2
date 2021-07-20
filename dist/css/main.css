@@ -54,7 +54,7 @@ img {
   --neon-font: "Las Enter";
   --grey-text: #ccc;
   --color-primary: #f7347a;
-  --color-secondary: #03e9f4;
+  --color-secondary: #008d8a;
 }
 
 .mg-right-1 {
@@ -520,6 +520,18 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.swiper-slide .triangle {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-primary);
+}
+
 .swiper-slide:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -541,6 +553,10 @@ img {
   color: #ddd;
 }
 
+.projects {
+  margin-bottom: 3rem;
+}
+
 .projects .section-header {
   font-size: 2rem;
   font-weight: 400;
@@ -548,7 +564,7 @@ img {
 
 .projects #card {
   display: none;
-  background: #121212;
+  background: #1a1919;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -564,8 +580,15 @@ img {
           filter: hue-rotate(200deg);
 }
 
+.projects #card .card-image {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 .projects #card .card-image img {
   width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -821,5 +844,123 @@ img {
 .center.about .main__logo {
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
+}
+
+.testimonials {
+  margin-bottom: 3rem;
+}
+
+.testimonials .section-header {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.testimonials .testimonial {
+  border-radius: 10%;
+  margin-top: 2rem;
+}
+
+.testimonials .testimonial .testimonial-top {
+  padding: 3rem 3rem 3rem 3rem;
+  background: #17108a;
+  background: -webkit-gradient(linear, left top, right top, from(#17108a), to(#008d8a));
+  background: linear-gradient(90deg, #17108a 0%, #008d8a 100%);
+}
+
+.testimonials .testimonial .testimonial-top .testimonial-quote {
+  position: relative;
+  text-align: center;
+  color: #aaa;
+}
+
+.testimonials .testimonial .testimonial-top .testimonial-quote p {
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.testimonials .testimonial .testimonial-top .testimonial-quote i {
+  font-size: 1.5rem;
+}
+
+.testimonials .testimonial .testimonial-top .testimonial-quote .fa-quote-left {
+  position: absolute;
+  left: -25px;
+  top: -25px;
+}
+
+.testimonials .testimonial .testimonial-top .testimonial-quote .fa-quote-right {
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+}
+
+.testimonials .testimonial .testimonial-bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1a1919;
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.testimonials .testimonial .testimonial-bottom .testimonial-image {
+  position: absolute;
+  top: -25%;
+  width: 80px;
+  height: 80px;
+  border: 5px solid #1a1919;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial .testimonial-bottom .testimonial-image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .testimonial .testimonial-bottom .testimonial-stars {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.testimonials .testimonial .testimonial-bottom .testimonial-name {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .testimonial .testimonial-bottom .testimonial-company {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+@media (min-width: 767px) {
+  .testimonials .testimonial-desktop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .testimonials .testimonial-desktop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

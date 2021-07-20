@@ -32,6 +32,22 @@
     background: rgba($color: #000000, $alpha: 0.5);
   }
 
+  // Do I need this triangle class?
+  .triangle {
+    // display: none;
+
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid var(--color-primary);
+  }
+
   &:hover {
     transform: scale(1.05);
     filter: grayscale(0%);
@@ -55,6 +71,8 @@
 }
 
 .projects {
+  margin-bottom: 3rem;
+
   .section-header {
     font-size: 2rem;
     font-weight: 400;
@@ -63,7 +81,7 @@
   #card {
     display: none;
 
-    background: #121212;
+    background: #1a1919;
 
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -76,8 +94,11 @@
       filter: hue-rotate(200deg);
     }
     .card-image {
+      display: grid;
+      place-items: center;
       img {
         width: 100%;
+        height: auto;
         object-fit: cover;
       }
     }
