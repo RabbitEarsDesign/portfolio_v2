@@ -142,6 +142,7 @@ showProjectDetails();
 
 // Animate the logo onload
 function firstLoad() {
+  // Preload Function is used to apply loaded class to animation
   function Preloader() {
     window.onload = () => {
       setTimeout(() => {
@@ -152,6 +153,7 @@ function firstLoad() {
       console.log("test");
     };
   }
+  // If this is the first visit then add 'doNotShow' to session storage and run preloader
   if (!sessionStorage.getItem("doNotShow")) {
     sessionStorage.setItem("doNotShow", true);
     Preloader();
