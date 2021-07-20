@@ -139,3 +139,25 @@ const showProjectDetails = () => {
 
 showProjectDetails();
 // END
+
+// Animate the logo onload
+function firstLoad() {
+  function Preloader() {
+    window.onload = () => {
+      setTimeout(() => {
+        const body = document.querySelector("body");
+
+        body.classList.add("loaded");
+      }, 6000);
+      console.log("test");
+    };
+  }
+  if (!sessionStorage.getItem("doNotShow")) {
+    sessionStorage.setItem("doNotShow", true);
+    Preloader();
+  } else {
+    document.getElementById("preloader").style.display = "none";
+  }
+}
+
+firstLoad();
