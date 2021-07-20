@@ -437,16 +437,36 @@ img {
 }
 
 #main-header .main-tagline {
+  position: relative;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 #main-header .main-tagline h2 {
+  color: #fff;
   font-style: italic;
   font-weight: 900;
   font-size: 2rem;
   font-family: "Pricedown";
   line-height: 0.95;
+  opacity: 1;
+}
+
+#main-header .main-tagline .main-header-bg {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  font-family: "Pricedown", sans-serif;
+  color: #fff;
+  opacity: 0.15;
+}
+
+#main-header .main-tagline .main-header-bg h1 {
+  font-size: 4.5rem;
+  line-height: 0.8;
 }
 
 @media (min-width: 499px) {
@@ -463,6 +483,25 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 767px) {
+  #main-header .main-tagline h2 {
+    font-size: 4rem;
+  }
+  #main-header .main-tagline .main-header-bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #main-header .main-tagline .main-header-bg h1 {
+    font-size: 7rem;
+    line-height: 0.8;
   }
 }
 
