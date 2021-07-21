@@ -59,42 +59,32 @@ const showProjectDetails = () => {
       cardLabelBizType: "Ski Company",
       cardLabelCategory: "Action",
       cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      github: "https://github.com/RabbitEarsDesign/bowling_website",
+      website: "https://google.com",
+    },
+
+    // Something Sweet
+    {
+      cardHeader: "Something Sweet",
+      cardImage: "./img/projects/something_sweet3.png",
+      cardLabelYear: "2021",
+      cardLabelBizType: "Ice Cream Store",
+      cardLabelCategory: "Small Business",
+      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
       github: "https://github.com",
       website: "https://google.com",
     },
 
     // Moment Gallery
     {
-      title: "Moment Skis Gallery",
-      projectSummary: `Moment Skis Gallery is a fan page built for the Moment Skis brand. The goal was to create a place where fans of moment skis could view all of the topsheet graphics that have been created by the brand since their inception.`,
-      projectDesignProcess: `Throught the design process it was important to maintain the look and feel of the original momentskis.com website. Utilizing similar color schemes and logos allowed this process.`,
-      projectMoreInfo: `Checkout momentskis.com to learn more about the brand and visit the gallery below to see the skis!`,
-      projectImg1: "./img/projects/moment_gallery_cover.png",
-      projectImg2: "./img/projects/moment_skis_gallery2.png",
-      projectImg3: "./img/projects/moment_skis_gallery3.png",
+      cardHeader: "Bob's Bowling",
+      cardImage: "./img/projects/bobs_bowling1.png",
+      cardLabelYear: "2021",
+      cardLabelBizType: "Ski Company",
+      cardLabelCategory: "Action",
+      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
       github: "https://github.com",
-      website: "https://www.momentskisgallery.com/",
-    },
-    // Something Sweet
-    {
-      title: "Something Sweet",
-      projectSummary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Accusamus architecto corporis cupiditate consequuntur ex fuga
-    nulla provident reiciendis mollitia quos ipsum incidunt
-    doloremque cum consequatur, nobis asperiores, unde id facilis.`,
-      projectDesignProcess: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Deserunt praesentium sit delectus quidem tenetur similique
-    officiis aspernatur enim illum eaque!`,
-      projectMoreInfo: `     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Pariatur quia vero facilis nostrum a deleniti accusamus quod
-    debitis tenetur blanditiis non alias laborum consequatur, rerum
-    veniam illo similique aspernatur aperiam earum? Maxime eaque
-    animi ratione!`,
-      projectImg1: "./img/projects/something_sweet1.png",
-      projectImg2: "./img/projects/something_sweet2.png",
-      projectImg3: "./img/projects/something_sweet3.png",
-      github: "https://github.com",
-      website: "https://somethingsweet.com/",
+      website: "https://google.com",
     },
   ];
 
@@ -103,7 +93,13 @@ const showProjectDetails = () => {
     item.addEventListener("click", () => {
       if (projectsArr.indexOf(item) + 1 <= projectData.length) {
         card.style.display = "flex";
-        card.scrollIntoView();
+        // scrollToCenter();
+        card.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+          inline: "center",
+        });
+        // need to use a diffrent method this isnt supported enough
 
         let indexOfSwiper = projectsArr.indexOf(item);
 
@@ -121,6 +117,12 @@ const showProjectDetails = () => {
       }
     });
   });
+
+  // scroll to center
+  function scrollToCenter() {
+    const cardTop = document.card.offsetTop() - window.innerHeight / 2;
+    window.scrollTo(cardTop);
+  }
 
   // Get various project content inputs via id
 

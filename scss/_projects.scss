@@ -167,6 +167,20 @@
   }
 }
 
+@media (min-width: 767px) {
+  .projects {
+    #card {
+      .card-details {
+        .card-labels {
+        }
+      }
+    }
+  }
+
+  .card .card-image {
+  }
+}
+
 @media (min-width: 1023px) {
   .projects {
     #card {
@@ -182,6 +196,7 @@
   }
 
   .card .card-image {
-    flex-basis: 3;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
 }
