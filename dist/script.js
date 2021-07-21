@@ -53,38 +53,38 @@ const showProjectDetails = () => {
   const projectData = [
     // Bobs Bowling
     {
-      cardHeader: "Bob's Bowling",
-      cardImage: "./img/projects/bobs_bowling1.png",
-      cardLabelYear: "2021",
-      cardLabelBizType: "Ski Company",
-      cardLabelCategory: "Action",
-      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
-      github: "https://github.com/RabbitEarsDesign/bowling_website",
-      website: "https://google.com",
+      cardHeaderData: "Bob's Bowling",
+      cardImageData: "./img/projects/bobs_bowling1.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Bowling Alley",
+      cardLabelbizCategoryData: "Small Business",
+      cardDescriptionData: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      githubData: "https://github.com/RabbitEarsDesign/bowling_website",
+      websiteData: "https://google.com",
     },
 
     // Something Sweet
     {
-      cardHeader: "Something Sweet",
-      cardImage: "./img/projects/something_sweet3.png",
-      cardLabelYear: "2021",
-      cardLabelBizType: "Ice Cream Store",
-      cardLabelCategory: "Small Business",
-      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
-      github: "https://github.com",
-      website: "https://google.com",
+      cardHeaderData: "Something Sweet",
+      cardImageData: "./img/projects/something_sweet3.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Ice Cream Store",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      githubData: "https://github.com",
+      websiteData: "https://google.com",
     },
 
     // Moment Gallery
     {
-      cardHeader: "Bob's Bowling",
-      cardImage: "./img/projects/bobs_bowling1.png",
-      cardLabelYear: "2021",
-      cardLabelBizType: "Ski Company",
-      cardLabelCategory: "Action",
-      cardDescription: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
-      github: "https://github.com",
-      website: "https://google.com",
+      cardHeaderData: "Bob's Bowling",
+      cardImageData: "./img/projects/bobs_bowling1.png",
+      cardLabelYearData: "2021",
+      cardLabelBizTypeData: "Ski Company",
+      cardLabelCategoryData: "Action",
+      cardDescriptionData: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      githubData: "https://github.com",
+      websiteData: "https://google.com",
     },
   ];
 
@@ -103,15 +103,17 @@ const showProjectDetails = () => {
 
         let indexOfSwiper = projectsArr.indexOf(item);
 
-        cardHeader.innerHTML = projectData[indexOfSwiper].cardHeader;
-        cardLabelYear.innerHTML = projectData[indexOfSwiper].cardLabelYear;
-        cardImage.src = projectData[indexOfSwiper].cardImage;
-        cardLabelBizType.innerHTML =
-          projectData[indexOfSwiper].cardLabelBizType;
+        cardHeader.innerHTML = projectData[indexOfSwiper].cardHeaderData;
+        cardLabelYear.innerHTML = projectData[indexOfSwiper].cardLabelYearData;
+        cardImage.src = projectData[indexOfSwiper].cardImageData;
+        cardLabelType.innerHTML =
+          projectData[indexOfSwiper].cardLabelBizTypeData;
         cardLabelCategory.innerHTML =
-          projectData[indexOfSwiper].cardLabelCategory;
-        github.href = projectData[indexOfSwiper].github;
-        website.href = projectData[indexOfSwiper].website;
+          projectData[indexOfSwiper].cardLabelCategoryData;
+        cardDescription.innerHTML =
+          projectData[indexOfSwiper].cardDescriptionData;
+        github.href = projectData[indexOfSwiper].githubData;
+        website.href = projectData[indexOfSwiper].websiteData;
       } else {
         project.style.display = "none";
       }
@@ -131,9 +133,7 @@ const showProjectDetails = () => {
   const cardHeader = document.getElementById("card-header");
   const cardLabelYear = document.getElementById("card-label-year");
   const cardLabelType = document.getElementById("card-label-type");
-  const cardLabelBizCategory = document.getElementById(
-    "card-label-biz-category"
-  );
+  const cardLabelCategory = document.getElementById("card-label-biz-category");
   const cardDescription = document.getElementById("card-description");
   const github = document.getElementById("github");
   const website = document.getElementById("website");
