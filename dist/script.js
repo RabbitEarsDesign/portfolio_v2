@@ -61,7 +61,7 @@ const showProjectDetails = () => {
       cardDescriptionData:
         "Bob's Bowling is a fictional bowling company that I built a website for. This website is intended to showcase the kind of work my clients can expect. Take a look at the site and see for youself!",
       githubData: "https://github.com/RabbitEarsDesign/bowling_website",
-      websiteData: "https://google.com",
+      websiteData: "https://ecstatic-hopper-c90f58.netlify.app",
     },
 
     // Something Sweet
@@ -146,7 +146,7 @@ function firstLoad() {
         const body = document.querySelector("body");
 
         body.classList.add("loaded");
-      }, 6000);
+      }, 5500);
       console.log("test");
     };
   }

@@ -679,7 +679,7 @@ img {
 }
 
 .projects #card .card-details {
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: left;
 }
 
@@ -718,6 +718,7 @@ img {
   font-size: 0.75rem;
   color: #ccc;
   font-weight: 100;
+  line-height: 2;
 }
 
 .projects #card .card-details .card-rating {
