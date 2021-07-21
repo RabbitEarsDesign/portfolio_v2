@@ -57,8 +57,9 @@ const showProjectDetails = () => {
       cardImageData: "./img/projects/bobs_bowling1.png",
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Bowling Alley",
-      cardLabelbizCategoryData: "Small Business",
-      cardDescriptionData: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      cardLabelCategoryData: "Small Business",
+      cardDescriptionData:
+        "Bob's Bowling is a fictional bowling company that I built a website for. This website is intended to showcase the kind of work my clients can expect. Take a look at the site and see for youself!",
       githubData: "https://github.com/RabbitEarsDesign/bowling_website",
       websiteData: "https://google.com",
     },
@@ -120,20 +121,14 @@ const showProjectDetails = () => {
     });
   });
 
-  // scroll to center
-  function scrollToCenter() {
-    const cardTop = document.card.offsetTop() - window.innerHeight / 2;
-    window.scrollTo(cardTop);
-  }
-
   // Get various project content inputs via id
 
   const card = document.getElementById("card");
   const cardImage = document.getElementById("card-image");
   const cardHeader = document.getElementById("card-header");
   const cardLabelYear = document.getElementById("card-label-year");
-  const cardLabelType = document.getElementById("card-label-type");
-  const cardLabelCategory = document.getElementById("card-label-biz-category");
+  const cardLabelType = document.getElementById("card-label-biz-type");
+  const cardLabelCategory = document.getElementById("card-label-category");
   const cardDescription = document.getElementById("card-description");
   const github = document.getElementById("github");
   const website = document.getElementById("website");
@@ -142,7 +137,7 @@ const showProjectDetails = () => {
 showProjectDetails();
 // END
 
-// Animate the logo onload
+// ANIMATE LOGO ON PAGELOAD
 function firstLoad() {
   // Preload Function is used to apply loaded class to animation
   function Preloader() {
@@ -163,5 +158,5 @@ function firstLoad() {
     document.getElementById("preloader").style.display = "none";
   }
 }
-
 firstLoad();
+// END

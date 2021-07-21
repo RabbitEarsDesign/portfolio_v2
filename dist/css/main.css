@@ -703,15 +703,17 @@ img {
 }
 
 .projects #card .card-details .card-labels p {
+  white-space: nowrap;
   margin: 0;
-  padding: 0;
-  font-size: 0.75rem;
+  padding: 0 3px 0px 0px;
+  font-size: 0.7rem;
   color: #ccc;
   font-weight: 100;
 }
 
 .projects #card .card-details .card-description {
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
   font-size: 0.75rem;
   color: #ccc;
@@ -746,16 +748,19 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-flex: 2;
-        -ms-flex: 2 1;
-            flex: 2 1;
+  }
+  .projects #card .card-image {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .projects #card .card-details {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .projects #card .card-details .card-labels {
     width: 50%;
-  }
-  .card .card-image {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
   }
 }
 

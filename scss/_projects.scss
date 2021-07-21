@@ -124,10 +124,12 @@
         padding: 0;
 
         p {
-          margin: 0;
-          padding: 0;
+          white-space: nowrap;
 
-          font-size: 0.75rem;
+          margin: 0;
+          padding: 0 3px 0px 0px;
+
+          font-size: 0.7rem;
           color: #ccc;
           font-weight: 100;
         }
@@ -135,6 +137,7 @@
 
       .card-description {
         margin: 0;
+        margin-bottom: auto;
         padding: 0;
 
         font-size: 0.75rem;
@@ -185,18 +188,22 @@
   .projects {
     #card {
       flex-direction: row;
-      flex: 2 1;
+
+      .card-image {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+
+        flex-basis: 50%;
+        // flex: 1 auto;
+      }
 
       .card-details {
+        flex-basis: 50%;
+
         .card-labels {
           width: 50%;
         }
       }
     }
-  }
-
-  .card .card-image {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
   }
 }
