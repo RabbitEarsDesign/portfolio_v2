@@ -877,6 +877,7 @@ img {
 .contact .form .inputs textarea {
   display: block;
   width: 100%;
+  font-family: "Roboto", sans-serif;
   background: none;
   border: 1px solid #f7347a;
   color: #ccc;
@@ -887,25 +888,25 @@ img {
 
 .contact .form .inputs textarea::-webkit-input-placeholder {
   color: #ccc;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
 }
 
 .contact .form .inputs textarea:-ms-input-placeholder {
   color: #ccc;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
 }
 
 .contact .form .inputs textarea::-ms-input-placeholder {
   color: #ccc;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
 }
 
 .contact .form .inputs textarea::placeholder {
   color: #ccc;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
 }
 
@@ -969,6 +970,12 @@ img {
   font-size: 1rem;
   font-weight: 100;
   text-align: center;
+}
+
+@media (min-width: 767px) {
+  .testimonials h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .testimonial {

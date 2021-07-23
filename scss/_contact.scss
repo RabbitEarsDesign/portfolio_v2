@@ -64,6 +64,7 @@
       textarea {
         display: block;
         width: 100%;
+        font-family: "Roboto", sans-serif;
 
         background: none;
         border: 1px solid #f7347a;
@@ -74,7 +75,7 @@
 
         &::placeholder {
           color: #ccc;
-          font-family: "Roboto";
+          font-family: "Roboto", sans-serif;
           font-size: 0.75rem;
         }
       }

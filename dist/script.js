@@ -23,11 +23,11 @@ var swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
     },
 
-    767: {
+    999: {
       slidesPerView: 2,
     },
 
-    1260: {
+    1499: {
       slidesPerView: 3,
     },
   },
@@ -113,20 +113,20 @@ function showClientWork() {
       cardLabelBizTypeData: "Bowling Alley",
       cardLabelCategoryData: "Small Business",
       cardDescriptionData:
-        "Bob's Bowling is a fictional bowling company that I built a website for. This website is intended to showcase the kind of work my clients can expect. Take a look at the site and see for youself!",
+        "Bob’s Bowling is a fictional company that I designed a website for in order to showcase the kind of product clients can expect to receive. This website is an example of the custom solutions offered by Rabbit Ears Design. Click the link below to visit the website and see for yourself!",
       githubData: "https://github.com/RabbitEarsDesign/bowling_website",
-      websiteData: "https://ecstatic-hopper-c90f58.netlify.app",
+      websiteData: "https://relaxed-meninsky-b2c08d.netlify.app",
     },
 
-    // Something Sweet
+    // Wordpress Site
     {
-      cardHeaderData: "Something Sweet",
-      cardImageData: "./img/projects/something_sweet3.png",
+      cardHeaderData: "Wordpress Site",
+      cardImageData: "./img/projects/cover/coming_soon.jpg",
       cardLabelYearData: "2021",
-      cardLabelBizTypeData: "Ice Cream Store",
+      cardLabelBizTypeData: "Wordpress Site",
       cardLabelCategoryData: "Small Business",
       cardDescriptionData:
-        "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk ",
+        "This website is currently in development and is a showcase of a site designed using Wordpress CMS. A CMS allows clients to more easily manage their website themselves if they desire. When you choose Rabbit Ears Design I spend the time getting to know your business needs in order to provide a solution that most adequately meets your needs and the needs of your customers.",
       githubData: "https://github.com",
       websiteData: "https://google.com",
     },
@@ -192,21 +192,10 @@ function showPersonalProjects() {
       cardLabelYearData: "2021",
       cardLabelBizTypeData: "Ski Company",
       cardLabelCategoryData: "Action",
-      cardDescriptionData: "sdnfajdfnkdfnskjfna;kdsjnf sdkjnsfnskjfnk",
+      cardDescriptionData:
+        "Moment Skis Gallery is a virtual museum built to showcase all of the unique topsheet graphics designed by Moment Skis since their founding over a decade ago. This is a project built entirely for personal enjoyment and is updated periodically when time allows. Ultimately it will be a place to learn about each ski and follow the history of the company as they continue designing rad art on skis. Click the link to explore for yourself!",
       githubData: "https://github.com",
       websiteData: "https:/momentskisgallery.com",
-    },
-    // Bobs Bowling
-    {
-      cardHeaderData: "Bob's Bowling",
-      cardImageData: "./img/projects/bobs_bowling1.png",
-      cardLabelYearData: "2021",
-      cardLabelBizTypeData: "Bowling Alley",
-      cardLabelCategoryData: "Small Business",
-      cardDescriptionData:
-        "Bob's Bowling is a fictional bowling company that I built a website for. This website is intended to showcase the kind of work my clients can expect. Take a look at the site and see for youself!",
-      githubData: "https://github.com/RabbitEarsDesign/bowling_website",
-      websiteData: "https://ecstatic-hopper-c90f58.netlify.app",
     },
   ];
 
