@@ -50,7 +50,9 @@ function firstLoad() {
   if (!sessionStorage.getItem("doNotShow")) {
     sessionStorage.setItem("doNotShow", true);
 
+    disableScrolling();
     preloader();
+    enableScrolling();
   } else {
     document.getElementById("preloader").style.display = "none";
   }
@@ -59,7 +61,7 @@ function firstLoad() {
 firstLoad();
 
 // Preload Function is used to apply loaded class to animation
-function preloader(callback) {
+function preloader() {
   // disableScrolling();
   window.onload = () => {
     setTimeout(() => {
@@ -68,12 +70,13 @@ function preloader(callback) {
       body.classList.add("loaded");
     }, 4500);
   };
-  if (callback) callback();
 }
 
 // Enable / Disable scroll
 function enableScrolling() {
-  document.documentElement.style.overflow = "visible";
+  setTimeout(() => {
+    document.documentElement.style.overflow = "visible";
+  }, 5000);
 }
 
 function disableScrolling() {
