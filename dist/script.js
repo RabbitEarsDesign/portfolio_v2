@@ -197,7 +197,7 @@ function showPersonalProjects() {
       cardLabelCategoryData: "Outdoor Sports Industry",
       cardDescriptionData:
         "Moment Skis Gallery is a virtual museum built to showcase all of the unique topsheet graphics designed by Moment Skis since their founding over a decade ago. This is a project built entirely for personal enjoyment and is updated periodically when time allows. Ultimately it will be a place to learn about each ski and follow the history of the company as they continue designing rad art on skis. Click the link to explore for yourself!",
-      githubData: "https://github.com",
+      githubData: "https://github.com/RabbitEarsDesign/moment_skis_gallery",
       websiteData: "https://momentskisgallery.com",
     },
   ];
