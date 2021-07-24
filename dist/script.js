@@ -116,7 +116,7 @@ function showClientWork() {
       cardLabelBizTypeData: "Bowling Alley",
       cardLabelCategoryData: "Small Business",
       cardDescriptionData:
-        "Bob’s Bowling is a fictional company for which I designed a website in order to showcase the kind of product my clients can expect to receive. This website is an example of the custom solutions offered by Rabbit Ears Design. Click the link below to visit and see for yourself!",
+        "Bob’s Bowling is a fictional company for which I designed a website in order to showcase the kind of product my clients can expect to receive. This website is an example of the custom solutions I offer. Click the link below to visit and see for yourself!",
       githubData: "https://github.com/RabbitEarsDesign/bowling_website",
       websiteData: "https://relaxed-meninsky-b2c08d.netlify.app",
     },
