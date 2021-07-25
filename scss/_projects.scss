@@ -73,9 +73,25 @@
 .projects {
   margin-bottom: 3rem;
 
+  .projects-description {
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+
+    @media (min-width: 767px) {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
   .section-header {
     font-size: 2rem;
     font-weight: 400;
+    color: #fff;
   }
 
   .card {
@@ -111,7 +127,7 @@
       text-align: left;
 
       .card-header {
-        font-weight: 100;
+        font-weight: 500;
         text-transform: uppercase;
         margin: 10px 0;
 
@@ -132,8 +148,8 @@
           margin: 0;
           padding: 0 3px 0px 0px;
 
-          font-size: 0.7rem;
-          color: #ccc;
+          font-size: 0.75rem;
+          color: #fff;
           font-weight: 100;
         }
       }
@@ -181,6 +197,7 @@
     #card {
       .card-details {
         .card-labels {
+          font-size: 0.8rem;
         }
       }
     }
@@ -206,8 +223,20 @@
       .card-details {
         flex-basis: 50%;
 
+        .card-header {
+          font-size: 1.5rem;
+        }
+
         .card-labels {
           width: 50%;
+
+          p {
+            font-size: 1rem;
+          }
+        }
+
+        .card-description {
+          font-size: 0.8rem;
         }
       }
     }

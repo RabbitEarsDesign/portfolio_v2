@@ -391,7 +391,7 @@ img {
   }
 }
 
-#aside {
+.aside {
   position: fixed;
   left: 0;
   top: 0;
@@ -400,13 +400,13 @@ img {
   text-align: center;
 }
 
-#aside .aside-container .aside-logo {
+.aside-container .aside-logo {
   width: 70px;
   height: 70px;
   padding: 10px;
 }
 
-#aside .aside-container .aside-nav {
+.aside-container .aside-nav {
   position: relative;
   text-align: center;
   display: -webkit-box;
@@ -423,11 +423,11 @@ img {
   margin-top: 60px;
 }
 
-#aside .aside-container .aside-nav .aside-links li {
+.aside-container .aside-nav .aside-links li {
   margin: 10px 5px;
 }
 
-#aside .aside-container .aside-nav .aside-links li a {
+.aside-container .aside-nav .aside-links li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,18 +439,18 @@ img {
   color: #ccc;
 }
 
-#aside .aside-container .aside-nav .aside-links li a:hover {
+.aside-container .aside-nav .aside-links li a:hover {
   color: #fff;
 }
 
-#aside .aside-container .aside-nav .aside-links li a p {
+.aside-container .aside-nav .aside-links li a p {
   font-size: 0.5rem;
   display: none;
   text-transform: uppercase;
   font-weight: 900;
 }
 
-#aside .copyright {
+.aside .copyright {
   display: none;
   position: absolute;
   bottom: 8px;
@@ -459,20 +459,20 @@ img {
   text-align: center;
 }
 
-#aside .copyright p {
+.aside .copyright p {
   font-size: 8px;
   color: #ccc;
 }
 
-#aside.active {
+.aside.active {
   background: rgba(0, 0, 0, 0.8);
 }
 
-#aside.active .aside-container .aside-nav .aside-links li a p {
+.aside.active .aside-container .aside-nav .aside-links li a p {
   display: inline-block;
 }
 
-#aside.active .copyright {
+.aside.active .copyright {
   display: block;
 }
 
@@ -651,9 +651,28 @@ img {
   margin-bottom: 3rem;
 }
 
+.projects .projects-description {
+  padding-top: 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 767px) {
+  .projects .projects-description {
+    font-size: 1.5rem;
+  }
+}
+
+.projects .projects-description p {
+  font-size: 1rem;
+}
+
 .projects .section-header {
   font-size: 2rem;
   font-weight: 400;
+  color: #fff;
 }
 
 .projects .card {
@@ -700,7 +719,7 @@ img {
 }
 
 .projects .card .card-details .card-header {
-  font-weight: 100;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 10px 0;
   font-size: 1.25rem;
@@ -722,8 +741,8 @@ img {
   white-space: nowrap;
   margin: 0;
   padding: 0 3px 0px 0px;
-  font-size: 0.7rem;
-  color: #ccc;
+  font-size: 0.75rem;
+  color: #fff;
   font-weight: 100;
 }
 
@@ -762,6 +781,12 @@ img {
           filter: hue-rotate(200deg);
 }
 
+@media (min-width: 767px) {
+  .projects #card .card-details .card-labels {
+    font-size: 0.8rem;
+  }
+}
+
 @media (min-width: 1023px) {
   .projects #card {
     -webkit-box-orient: horizontal;
@@ -779,8 +804,17 @@ img {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
+  .projects #card .card-details .card-header {
+    font-size: 1.5rem;
+  }
   .projects #card .card-details .card-labels {
     width: 50%;
+  }
+  .projects #card .card-details .card-labels p {
+    font-size: 1rem;
+  }
+  .projects #card .card-details .card-description {
+    font-size: 0.8rem;
   }
 }
 
@@ -790,6 +824,7 @@ img {
 
 .contact .contact-header {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .contact .contact-header h4 {
@@ -799,6 +834,7 @@ img {
 }
 
 .contact .contact-header p {
+  color: #fff;
   font-size: 0.8rem;
   text-align: center;
   line-height: 1.6;
@@ -817,6 +853,7 @@ img {
 .contact .form {
   margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
 
 .contact .form h3 {
@@ -932,26 +969,34 @@ img {
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 1rem;
-}
-
-.about-content h3 {
-  color: #ccc;
-  font-size: 1rem;
-  margin: 3rem 0rem 0.75rem 0rem;
-}
-
-.about-content p {
-  margin-bottom: 3rem;
-  line-height: 1.6;
-  font-size: 0.75rem;
-}
-
-.about-content .btn {
-  margin-bottom: 1rem;
+  color: #fff;
 }
 
 .about-content .bottom-line {
   margin: 0 auto;
+}
+
+.about-content h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 3rem 0rem 0.75rem 0rem;
+}
+
+.about-content-group p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+@media (min-width: 767px) {
+  .about-content-group p {
+    font-size: 0.9rem;
+  }
+}
+
+.about-content-group .btn {
+  margin-bottom: 1rem;
 }
 
 .center.about .main__logo {
@@ -966,6 +1011,7 @@ img {
 .testimonials .section-header {
   font-size: 2rem;
   font-weight: 400;
+  color: #fff;
 }
 
 .testimonials h3 {
@@ -973,6 +1019,7 @@ img {
   font-size: 1rem;
   font-weight: 100;
   text-align: center;
+  color: #fff;
 }
 
 @media (min-width: 767px) {

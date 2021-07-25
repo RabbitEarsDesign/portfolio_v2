@@ -9,26 +9,32 @@
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1rem;
+    color: #fff;
+  }
+  .bottom-line {
+    margin: 0 auto;
   }
 
   h3 {
-    color: #ccc;
+    color: #fff;
     font-size: 1rem;
     margin: 3rem 0rem 0.75rem 0rem;
   }
+  &-group {
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      font-size: 0.75rem;
+      color: #fff;
 
-  p {
-    margin-bottom: 3rem;
-    line-height: 1.6;
-    font-size: 0.75rem;
-  }
+      @media (min-width: 767px) {
+        font-size: 0.9rem;
+      }
+    }
 
-  .btn {
-    margin-bottom: 1rem;
-  }
-
-  .bottom-line {
-    margin: 0 auto;
+    .btn {
+      margin-bottom: 1rem;
+    }
   }
 }
 
