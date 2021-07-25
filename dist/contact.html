@@ -136,7 +136,7 @@
             field to send me an email directly!
           </p>
         </div>
-        <form action="" class="form" netlify>
+        <form method="POST" class="form" data-netlify="true" data-netlify-recaptcha="true" name="contact-form">
           <h3>Don't be shy. Fill in the form</h3>
           <div class="bottom-line"></div>
           <div class="inputs">
@@ -149,6 +149,7 @@
               rows="10"
               placeholder="Message"
             ></textarea>
+            <div data-netlify-recaptcha="true" class="inputs-recaptcha"></div>
             <button type="submit" class="btn">
               <span></span>
               <span></span>

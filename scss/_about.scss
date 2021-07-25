@@ -21,6 +21,10 @@
     margin: 3rem 0rem 0.75rem 0rem;
   }
   &-group {
+    margin: 0 auto;
+    @media (min-width: 767px) {
+      width: 80%;
+    }
     p {
       margin-bottom: 1rem;
       line-height: 1.6;

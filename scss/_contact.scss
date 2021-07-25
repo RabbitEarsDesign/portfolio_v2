@@ -31,6 +31,10 @@
     margin: 0 auto;
     text-align: center;
     color: #fff;
+
+    @media (min-width: 767px) {
+      width: 60%;
+    }
     h3 {
       font-size: 1rem;
       margin-bottom: 1rem;
@@ -49,6 +53,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      &-recaptcha {
+        width: 60%;
+        margin: 0 auto;
+      }
+
       input {
         display: block;
         width: 100%;

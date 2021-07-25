@@ -856,6 +856,12 @@ img {
   color: #fff;
 }
 
+@media (min-width: 767px) {
+  .contact .form {
+    width: 60%;
+  }
+}
+
 .contact .form h3 {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -882,6 +888,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact .form .inputs-recaptcha {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .contact .form .inputs input {
@@ -980,6 +991,16 @@ img {
   color: #fff;
   font-size: 1rem;
   margin: 3rem 0rem 0.75rem 0rem;
+}
+
+.about-content-group {
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .about-content-group {
+    width: 80%;
+  }
 }
 
 .about-content-group p {
