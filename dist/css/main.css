@@ -989,7 +989,7 @@ img {
 .about-content h3 {
   color: #fff;
   font-size: 1rem;
-  margin: 3rem 0rem 0.75rem 0rem;
+  margin: 2rem 0rem 0.75rem 0rem;
 }
 
 .about-content-group {
@@ -1021,6 +1021,7 @@ img {
 
 .about-content .about-cta {
   position: relative;
+  margin-top: 3rem;
   width: 90%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
