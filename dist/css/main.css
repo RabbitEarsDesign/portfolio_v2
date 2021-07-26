@@ -1021,12 +1021,19 @@ img {
 
 .about-content .about-cta {
   position: relative;
+  margin: 0 auto;
   margin-top: 3rem;
   width: 90%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   -webkit-animation: flying-ufo 4s ease-in-out infinite;
           animation: flying-ufo 4s ease-in-out infinite;
+}
+
+@media (min-width: 767px) {
+  .about-content .about-cta {
+    width: 40%;
+  }
 }
 
 .about-content .about-cta-ufo {

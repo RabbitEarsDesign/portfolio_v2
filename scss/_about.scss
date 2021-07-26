@@ -46,11 +46,17 @@
   .about-cta {
     position: relative;
 
+    margin: 0 auto;
     margin-top: 3rem;
+
     width: 90%;
     transform: rotate(30deg);
 
     animation: flying-ufo 4s ease-in-out infinite;
+
+    @media (min-width: 767px) {
+      width: 40%;
+    }
 
     &-ufo {
       width: 100%;
