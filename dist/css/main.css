@@ -191,6 +191,8 @@ img {
   color: var(--color-primary);
   color: #fff;
   -webkit-box-reflect: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @-webkit-keyframes animate1 {
