@@ -129,7 +129,7 @@ function showClientWork() {
       cardLabelBizTypeData: "Wordpress Site",
       cardLabelCategoryData: "Small Business",
       cardDescriptionData:
-        "'Ski Colorado' is a fictional Heli Skiing company. I built this in order to showcase an example of a site made using Wordpress. When you choose Rabbit Ears Design I spend the time getting to know your business needs in order to provide a solution that most adequately meets your needs and the needs of your customers.",
+        "'Ski Colorado' is a fictional Heli Skiing company. I built this in order to showcase an example of a site made using Wordpress. When you choose Rabbit Ears Design I spend the time getting to know your business needs in order to provide a solution that exceeds expectations.",
       githubData: "https://github.com",
       websiteData: "https://examplewebsite.website",
     },
