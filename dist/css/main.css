@@ -650,7 +650,7 @@ img {
   margin-bottom: 3rem;
 }
 
-.projects .projects-description {
+.projects-description {
   padding-top: 2rem;
   font-size: 1rem;
   font-weight: 100;
@@ -659,12 +659,12 @@ img {
 }
 
 @media (min-width: 767px) {
-  .projects .projects-description {
+  .projects-description {
     font-size: 1.5rem;
   }
 }
 
-.projects .projects-description p {
+.projects-description p {
   font-size: 1rem;
 }
 
@@ -1017,6 +1017,64 @@ img {
 
 .about-content-group .btn {
   margin-bottom: 1rem;
+}
+
+.about-content .about-cta {
+  position: relative;
+  width: 90%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: flying-ufo 4s ease-in-out infinite;
+          animation: flying-ufo 4s ease-in-out infinite;
+}
+
+.about-content .about-cta-ufo {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content .about-cta-composite {
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  width: 35%;
+  height: 35%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.about-content .about-cta-composite img {
+  border-radius: 50%;
+}
+
+@-webkit-keyframes flying-ufo {
+  0% {
+    -webkit-transform: translate(15%, 0%) rotate(33deg);
+            transform: translate(15%, 0%) rotate(33deg);
+  }
+  50% {
+    -webkit-transform: translate(-5%, 10%) rotate(27deg);
+            transform: translate(-5%, 10%) rotate(27deg);
+  }
+  100% {
+    -webkit-transform: translate(15%, 0%) rotate(33deg);
+            transform: translate(15%, 0%) rotate(33deg);
+  }
+}
+
+@keyframes flying-ufo {
+  0% {
+    -webkit-transform: translate(15%, 0%) rotate(33deg);
+            transform: translate(15%, 0%) rotate(33deg);
+  }
+  50% {
+    -webkit-transform: translate(-5%, 10%) rotate(27deg);
+            transform: translate(-5%, 10%) rotate(27deg);
+  }
+  100% {
+    -webkit-transform: translate(15%, 0%) rotate(33deg);
+            transform: translate(15%, 0%) rotate(33deg);
+  }
 }
 
 .center.about .main__logo {
