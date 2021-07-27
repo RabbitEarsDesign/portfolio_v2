@@ -51,8 +51,7 @@ function firstLoad() {
     sessionStorage.setItem("doNotShow", true);
 
     disableScrolling();
-    preloader();
-    enableScrolling();
+    preloader(enableScrolling());
   } else {
     document.getElementById("preloader").style.display = "none";
   }
@@ -61,7 +60,7 @@ function firstLoad() {
 firstLoad();
 
 // Preload Function is used to apply loaded class to animation
-function preloader() {
+function preloader(callback) {
   // disableScrolling();
   window.onload = () => {
     setTimeout(() => {
@@ -69,6 +68,7 @@ function preloader() {
 
       body.classList.add("loaded");
     }, 4500);
+    callback();
   };
 }
 
