@@ -54,6 +54,10 @@
       margin-bottom: 1rem;
     }
   }
+
+  &-group .videoWrapper {
+    margin: 2rem 0 0 0;
+  }
   .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */

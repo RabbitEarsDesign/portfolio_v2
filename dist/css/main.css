@@ -883,6 +883,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.about-content-group .videoWrapper {
+  margin: 2rem 0 0 0;
+}
+
 .about-content .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
