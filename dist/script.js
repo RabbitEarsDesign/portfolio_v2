@@ -92,7 +92,8 @@ function disableScrolling() {
 // or create 1 array with 2 objects and each object represents the specific swiper slide section
 function showClientWork() {
   // Get various project content inputs via id
-  const card = document.getElementById("card");
+  const card = document.getElementById("popup-card");
+  const close = document.getElementById("close");
   const cardImage = document.getElementById("card-image");
   const cardHeader = document.getElementById("card-header");
   const cardLabelYear = document.getElementById("card-label-year");
@@ -138,15 +139,7 @@ function showClientWork() {
   projectsArr.forEach((item) => {
     item.addEventListener("click", () => {
       if (projectsArr.indexOf(item) + 1 <= projectData.length) {
-        card.style.display = "flex";
-
-        // scrollToCenter();
-        card.scrollIntoView({
-          behavior: "auto",
-          block: "center",
-          inline: "center",
-        });
-        // need to use a diffrent method this isnt supported enough
+        card.style.display = "block";
 
         let indexOfSwiper = projectsArr.indexOf(item);
 
@@ -166,11 +159,25 @@ function showClientWork() {
       }
     });
   });
+
+  close.addEventListener("click", () => {
+    card.style.display = "none";
+  });
+
+  // if (window.getComputedStyle(card).display === "block") {
+  //   window.onclick = function (event) {
+  //     if (event.target !== card) {
+  //       card.style.display = "none";
+  //       console.log("test");
+  //     }
+  //   };
+  // }
 }
 
 function showPersonalProjects() {
   // Get various project content inputs via id
-  const card = document.getElementById("personal-card");
+  const card = document.getElementById("personal-popup-card");
+  const close = document.getElementById("personal-close");
   const cardImage = document.getElementById("personal-card-image");
   const cardHeader = document.getElementById("personal-card-header");
   const cardLabelYear = document.getElementById("personal-card-label-year");
@@ -205,15 +212,7 @@ function showPersonalProjects() {
   projectsArr.forEach((item) => {
     item.addEventListener("click", () => {
       if (projectsArr.indexOf(item) + 1 <= projectData.length) {
-        card.style.display = "flex";
-
-        // scrollToCenter();
-        card.scrollIntoView({
-          behavior: "auto",
-          block: "center",
-          inline: "center",
-        });
-        // need to use a diffrent method this isnt supported enough
+        card.style.display = "block";
 
         let indexOfSwiper = projectsArr.indexOf(item);
 
@@ -232,6 +231,10 @@ function showPersonalProjects() {
         project.style.display = "none";
       }
     });
+  });
+
+  close.addEventListener("click", () => {
+    card.style.display = "none";
   });
 }
 
